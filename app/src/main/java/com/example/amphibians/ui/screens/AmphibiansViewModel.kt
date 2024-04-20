@@ -57,8 +57,6 @@ class AmphibiansViewModel (private val amphibiansPhotosRepository: AmphibiansPho
         viewModelScope.launch {
             amphibiansUiState = AmphibiansUiState.Loading
             amphibiansUiState = try {
-                val result = amphibiansPhotosRepository.getAmphibiansPhotos()
-
                 AmphibiansUiState.Success(
                     amphibiansPhotosRepository.getAmphibiansPhotos()
                 )

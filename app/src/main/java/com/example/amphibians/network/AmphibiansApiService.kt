@@ -4,6 +4,6 @@ import com.example.amphibians.model.AmphibiansPhoto
 import retrofit2.http.GET
 
 interface AmphibiansApiService {
-    @GET("photos")
+    @GET("amphibians")
     suspend fun getPhotos(): List<AmphibiansPhoto>
 }

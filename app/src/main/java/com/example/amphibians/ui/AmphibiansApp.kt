@@ -23,6 +23,7 @@ import com.example.amphibians.R
 import com.example.amphibians.ui.screens.AmphibiansViewModel
 import com.example.amphibians.ui.screens.HomeScreen
 
+@OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun AmphibiansApp() {
     val scrollBehavior = TopAppBarDefaults.enterAlwaysScrollBehavior()

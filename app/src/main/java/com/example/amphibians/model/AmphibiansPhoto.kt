@@ -8,7 +8,9 @@ import kotlinx.serialization.Serializable
  */
 @Serializable
 data class AmphibiansPhoto(
-    val id: String,
+    val name: String,
+    val type: String,
+    val description: String,
     @SerialName(value = "img_src")
     val imgSrc: String
 )
